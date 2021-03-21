@@ -1,0 +1,297 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			box-sizing: border-box
+		}
+
+		body {
+			font-family: Verdana, sans-serif;
+			margin: 0;
+			text-align:center;
+		}
+
+		.mySlides {
+			display: none
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		.slideshow-container {
+			max-width: 1000px;
+			position: relative;
+			margin: auto;
+		}
+
+		
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+		}
+		
+
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		.next:hover,{
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+		.prev {
+			cursor: pointer;
+			position:absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+		}
+		
+
+		.prev {
+			right: 970;
+			border-radius: 3px 0 0 3px;
+		}
+
+		.prev:hover,{
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		.text {
+			color: #f2f2f2;
+			font-size: 25px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active,
+		.dot:hover {
+			background-color: #717171;
+		}
+
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		@keyframes fade {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+
+		@media only screen and (max-width: 300px) {
+
+			.prev,
+			.next,
+			.text {
+				font-size: 11px
+			}
+		}
+		p {
+			font-size: 50;
+		}
+		
+	
+		
+
+	</style>
+</head>
+
+<body>
+	<h1> 卂几丨爪乇    ᐯ丨ㄥㄥ卂丨几丂</h1>
+	<p> Grid Gallery</p>
+	<div>
+		<img class="1"src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/05/madara-uchiha-naruto-featured.jpg" Height="200"width="200">
+		<img src="https://s3.amazonaws.com/prod-media.gameinformer.com/styles/thumbnail/s3/2020/09/18/aa9834cd/golden_frieza_0.jpg" Height="200"Width="200">
+		<img src="https://cdn.myanimelist.net/images/characters/6/243861.jpg"  Height="200"Width="200" >
+		<img src="https://i.pinimg.com/originals/ec/f0/5f/ecf05f1ddd74440443031269c66d58d0.jpg"  Height="200"Width="200" >
+		<img src="https://i.pinimg.com/originals/11/73/79/11737947f189ab344e6326a8cc1c6c1d.jpg"  Height="200"Width="200" >
+	</div>
+	<div>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKrpJO9XOA6ChUKqUjYuhNsZrZlAgQd2kTxA&usqp=CAU" Height="200"Width="200" >
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfDlnEdeOXNkaQs1gNrhKo575eiLxFRismrg&usqp=CAU" Height="200" Width="200" >
+		<img src="https://i.ytimg.com/vi/NxSVeuMTMfk/maxresdefault.jpg"  Height="200"Width="200" >
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2fUKbBOdfvwcHfVoO6UJNWUN_E_gglLjbEg&usqp=CAU" Height="200"Width="200" >
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwxcL1UtT4feO3g_zHpCEmjZiFaGrjeuuVag&usqp=CAU"  Height="200"Width="200" >
+	</div>
+	
+
+	<br> <br> <br> <br> <br>
+	
+	<p>  Slide Gallery </p>
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 10</div>
+			<img src="https://static0.cbrimages.com/wordpress/wp-content/uploads/2020/05/madara-uchiha-naruto-featured.jpg" style="width:100%" Width="700" Height="700">
+			<div class="text">Madara</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 10</div>
+			<img src="https://s3.amazonaws.com/prod-media.gameinformer.com/styles/thumbnail/s3/2020/09/18/aa9834cd/golden_frieza_0.jpg" style="width:100%" Width="700" Height="700">
+			<div class="text">Frieza</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 10</div>
+			<img src="https://cdn.myanimelist.net/images/characters/6/243861.jpg" style="width:100%" Width="700" Height="700">
+			<div class="text">Muerum</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 10</div>
+			<img src="https://i.pinimg.com/originals/ec/f0/5f/ecf05f1ddd74440443031269c66d58d0.jpg" style="width:100%" Width="700" Height="700">
+			<div class="text">Blackbeard</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">5 / 10</div>
+			<img src="https://i.pinimg.com/originals/11/73/79/11737947f189ab344e6326a8cc1c6c1d.jpg" style="width:100%" Width="700" Height="700">
+			<div class="text">Aizen</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">6 / 10</div>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKrpJO9XOA6ChUKqUjYuhNsZrZlAgQd2kTxA&usqp=CAU" style="width:100%" Width="700" Height="700">
+			<div class="text">Dio</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">7 / 10</div>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfDlnEdeOXNkaQs1gNrhKo575eiLxFRismrg&usqp=CAU" style="width:100%" Width="700" Height="700">
+			<div class="text">Muzan</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">8 / 10</div>
+			<img src="https://i.ytimg.com/vi/NxSVeuMTMfk/maxresdefault.jpg" style="width:100%" Width="700" Height="700">
+			<div class="text">All For One</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">9 / 10</div>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2fUKbBOdfvwcHfVoO6UJNWUN_E_gglLjbEg&usqp=CAU" style="width:100%" Width="700" Height="700">
+			<div class="text">Demon King</div>
+		</div>
+		<div class="mySlides fade">
+			<div class="numbertext">10 / 10</div>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwxcL1UtT4feO3g_zHpCEmjZiFaGrjeuuVag&usqp=CAU" style="width:100%" Width="700" Height="700">
+			<div class="text">Colossal Titan</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+		<span class="dot" onclick="currentSlide(6)"></span>
+		<span class="dot" onclick="currentSlide(7)"></span>
+		<span class="dot" onclick="currentSlide(8)"></span>
+		<span class="dot" onclick="currentSlide(9)"></span>
+		<span class="dot" onclick="currentSlide(10)"></span>
+
+	</div>
+
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = slides.length
+			}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+		}
+
+	</script>
+
+</body>
+
+</html>
